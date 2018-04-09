@@ -77,7 +77,8 @@ RUN chown zap:zap /zap/zap-x.sh && \
 	chown zap:zap /zap/webswing/webswing.config && \
 	chown zap:zap -R /home/zap/.ZAP_D/ && \
 	chown zap:zap /home/zap/.xinitrc && \
-	chmod a+x /home/zap/.xinitrc
+	chmod a+x /home/zap/.xinitrc && \
+	chmod zap:zap /zap/zap-api-scan.py
 
 #Change back to zap at the end
 USER zap
